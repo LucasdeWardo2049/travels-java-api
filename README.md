@@ -20,6 +20,10 @@ Crie uma nova viagem com facilidade! Basta fornecer os detalhes da viagem no cor
 }
 ```
 
+#### Postman:
+
+![Criar Viagem](https://github.com/AdemarCastro/travels-java-api/assets/25653698/7fbef45e-8485-4a0b-84a4-36e54b918209)
+
 #### Respostas:
 
 - ✅ 201: Viagem criada com sucesso.
@@ -42,6 +46,10 @@ Atualize informações de uma viagem existente enviando um objeto modificado no 
 }
 ```
 
+#### Postman:
+
+![Atualizar Viagem](https://github.com/AdemarCastro/travels-java-api/assets/25653698/6c7d9c6a-b60f-4db7-911c-c5b363c0948e)
+
 #### Respostas:
 
 - ✅ 200: Atualização bem-sucedida.
@@ -55,6 +63,10 @@ Atualize informações de uma viagem existente enviando um objeto modificado no 
 
 Recupere uma lista de todas as viagens criadas.
 
+#### Postman:
+
+![Listar Viagens](https://github.com/AdemarCastro/travels-java-api/assets/25653698/2d2b8ae8-67d1-4d24-84a4-14bb42133f9a)
+
 #### Respostas:
 
 - ✅ 200: Viagens encontradas.
@@ -65,6 +77,10 @@ Recupere uma lista de todas as viagens criadas.
 **Endpoint:** `DELETE /api-travels/travels`
 
 Remova todas as viagens com uma requisição de corpo vazio e receba um tranquilo 204.
+
+#### Postman:
+
+![Remover Todas as Viagens](https://github.com/AdemarCastro/travels-java-api/assets/25653698/8f455518-4628-4f3b-8131-e7ed7053d152)
 
 ### 5. Estatísticas de Viagens
 
@@ -83,6 +99,20 @@ Receba estatísticas úteis sobre as viagens criadas, como a soma total, média,
 ```
 
 Todos os campos do tipo BigDecimal possuem apenas duas casas decimais.
+
+#### Postman:
+
+![Estatísticas de Viagens](https://github.com/AdemarCastro/travels-java-api/assets/25653698/d2f8acb5-0622-48ae-8440-97fd1757e9aa)
+
+## [Prefixos dos Commits](https://github.com/JuniorLima22/padroes-e-nomenclaturas-no-git#prefixos-dos-commits)
+- 📚 [DOCS]: apenas mudanças de documentação.
+- ✨ [FEAT]: Adição de uma nova feature ao projeto, componente, etc.
+- 🐞 [FIX]: Correção de um bug.
+- ⚡ [PERF]: Melhoria de performance.
+- 🛠️ [REFACTOR]: Refatoração do código que não adiciona uma funcionalidade nem corrige um bug.
+- 🎨 [STYLE]: Mudanças no código que não afetam seu significado (espaço em branco, formatação, ponto e vírgula, etc).
+- 🧪 [TEST]: Adição ou correção de testes.
+- 🚀 [IMPROVEMENT]: Melhoria em algo já existente, seja de performance, escrita, layout, etc.
 
 ## Mãos à Obra! 👨‍💻👩‍💻
 
