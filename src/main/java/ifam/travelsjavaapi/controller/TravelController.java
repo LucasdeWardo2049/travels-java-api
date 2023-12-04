@@ -1,6 +1,5 @@
 package ifam.travelsjavaapi.controller;
 
-
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,7 +54,7 @@ public class TravelController {
     public ResponseEntity<Travel> create(@RequestBody JSONObject travel) {
         try {
             if(travelService.isJSONValid(travel.toString())) {
-                System.out.println("Travel: " + travel);
+                // System.out.println("Travel: " + travel);
                 Travel travelCreated = travelService.create(travel);
                 var uri = ServletUriComponentsBuilder.fromCurrentRequest()
                         .path(travelCreated.getOrderNumber()).build().toUri();

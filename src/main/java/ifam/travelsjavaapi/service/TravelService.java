@@ -64,7 +64,7 @@ public class TravelService {
 
     private LocalDateTime parseEndDate(JSONObject travel){
         String endDate = null;
-        endDate = (String) travel.get("startDate");
+        endDate = (String) travel.get("endDate");
         return ZonedDateTime.parse(endDate).toLocalDateTime();
     }
 
@@ -86,11 +86,11 @@ public class TravelService {
 
 
     public Travel create(JSONObject jsonTravel) throws JSONException {
-        System.out.println("Type: " + jsonTravel.get("endDate"));
+        // System.out.println("Type: " + jsonTravel.get("endDate"));
         createTravelFactory();
 
         Travel travel = factory.createTravel((String) jsonTravel.get("type"));
-        System.out.println("Travel: " + travel);
+        // System.out.println("Travel: " + travel);
         travel.setId(parseId(jsonTravel));
         setTravelValues(jsonTravel, travel);
 
